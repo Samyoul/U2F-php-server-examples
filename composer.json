@@ -1,0 +1,14 @@
+{
+    "name": "samyoul/u2f-php-server-examples",
+    "description": "Working examples for samyoul/u2f-php-server repo",
+    "require": {
+        "samyoul/u2f-php-server": "1.0.0"
+    },
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Samuel Hawksby-Robinson",
+            "email": "samuel@samyoul.com"
+        }
+    ]
+}
