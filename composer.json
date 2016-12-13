@@ -2,7 +2,8 @@
     "name": "samyoul/u2f-php-server-examples",
     "description": "Working examples for samyoul/u2f-php-server repo",
     "require": {
-        "samyoul/u2f-php-server": "1.*"
+        "samyoul/u2f-php-server": "1.*",
+        "league/plates": "3.1"
     },
     "license": "BSD-2-Clause",
     "authors": [

@@ -4,20 +4,72 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "246c359015cf43f0c57f3e0495a53803",
+    "content-hash": "8722571abe7e55ce6000ddd62e665dea",
     "packages": [
         {
-            "name": "samyoul/u2f-php-server",
-            "version": "v1.1.0",
+            "name": "league/plates",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Samyoul/U2F-php-server.git",
-                "reference": "33a5815b7cc9ed162826abb894c3b5f95b944294"
+                "url": "https://github.com/thephpleague/plates.git",
+                "reference": "c39d8fbcbeb07a0948d5e1cf8d78c6e1ef3e81a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Samyoul/U2F-php-server/zipball/33a5815b7cc9ed162826abb894c3b5f95b944294",
-                "reference": "33a5815b7cc9ed162826abb894c3b5f95b944294",
+                "url": "https://api.github.com/repos/thephpleague/plates/zipball/c39d8fbcbeb07a0948d5e1cf8d78c6e1ef3e81a8",
+                "reference": "c39d8fbcbeb07a0948d5e1cf8d78c6e1ef3e81a8",
+                "shasum": ""
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "~1.4.0",
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "~1.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Plates\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan Reinink",
+                    "email": "jonathan@reinink.ca",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Plates, the native PHP template system that's fast, easy to use and easy to extend.",
+            "homepage": "http://platesphp.com",
+            "keywords": [
+                "league",
+                "package",
+                "templates",
+                "templating",
+                "views"
+            ],
+            "time": "2014-10-21T12:06:12+00:00"
+        },
+        {
+            "name": "samyoul/u2f-php-server",
+            "version": "v1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Samyoul/U2F-php-server.git",
+                "reference": "71ebc197b8de1dd6b74156e2ac8c99eaa31a0358"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Samyoul/U2F-php-server/zipball/71ebc197b8de1dd6b74156e2ac8c99eaa31a0358",
+                "reference": "71ebc197b8de1dd6b74156e2ac8c99eaa31a0358",
                 "shasum": ""
             },
             "require": {
@@ -42,7 +94,7 @@
                 }
             ],
             "description": "Server side handling class for FIDO U2F registration and authentication",
-            "time": "2016-12-13T16:28:05+00:00"
+            "time": "2016-12-13T22:09:51+00:00"
         }
     ],
     "packages-dev": [],

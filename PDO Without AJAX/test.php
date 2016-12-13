@@ -9,4 +9,4 @@
 require('../vendor/autoload.php');
 use Samyoul\U2F\U2FServer\U2FServer as U2F;
 
-var_dump(U2F::VERSION);
+var_dump(U2F::checkOpenSSLVersion());
