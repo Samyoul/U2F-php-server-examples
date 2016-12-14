@@ -5,7 +5,7 @@
  * Date: 13/12/2016
  * Time: 16:43
  */
-require('../functions.php');
+require_once('../functions.php');
 
 $pdo = getDBConnection();
 
@@ -29,4 +29,4 @@ $pdo->exec(
     )"
 );
 
-echo "Database migration completed.";
+echo "Database migration completed.<br/>";

@@ -5,7 +5,7 @@
  * Date: 13/12/2016
  * Time: 16:57
  */
-require("../functions.php");
+require_once("../functions.php");
 
 $pdo = getDBConnection();
 
@@ -16,4 +16,4 @@ $pdo->exec("
     INSERT INTO `users` VALUES (3,'shrek');
 ");
 
-echo "Your database is seeded.";
+echo "Your database is seeded.<br/>";
