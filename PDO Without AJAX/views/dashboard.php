@@ -5,6 +5,7 @@
     <p>Hello <?=$this->e($user->name)?> welcome to your super secure dashboard.</p>
     <hr/>
     <a class="btn btn-danger" href="logout.php">Log Out</a>
+    <a class="btn btn-danger" href="database/reset.php">Reset Database</a>
 </div>
 
 <h3>U2F Registrations</h3>

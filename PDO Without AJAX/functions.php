@@ -59,12 +59,12 @@ function getU2FRegistrations(stdClass $user)
 function storeU2FRegistration(stdClass $user, Registration $registration)
 {
     $pdo = getDBConnection();
-    $ins = $pdo->prepare("
+    $statement = $pdo->prepare("
         INSERT INTO registrations
         (user_id, keyHandle, publicKey, certificate, counter)
         VALUES (?, ?, ?, ?, ?)
     ");
-    $ins->execute([
+    $statement->execute([
         $user->id,
         $registration->getKeyHandle(),
         $registration->getPublicKey(),
@@ -72,4 +72,11 @@ function storeU2FRegistration(stdClass $user, Registration $registration)
         $registration->getCounter()
     ]);
 
+}
+
+function updateU2FRegistration(stdClass $registration)
+{
+    $pdo = getDBConnection();
+    $statement = $pdo->prepare("UPDATE registrations SET counter = ? WHERE id = ?");
+    $statement->execute([$registration->counter, $registration->id]);
 }

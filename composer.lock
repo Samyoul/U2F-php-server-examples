@@ -60,16 +60,16 @@
         },
         {
             "name": "samyoul/u2f-php-server",
-            "version": "v1.1.2",
+            "version": "v1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Samyoul/U2F-php-server.git",
-                "reference": "71ebc197b8de1dd6b74156e2ac8c99eaa31a0358"
+                "reference": "815279529ddd63b349dea9a1d0817fa2775d81c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Samyoul/U2F-php-server/zipball/71ebc197b8de1dd6b74156e2ac8c99eaa31a0358",
-                "reference": "71ebc197b8de1dd6b74156e2ac8c99eaa31a0358",
+                "url": "https://api.github.com/repos/Samyoul/U2F-php-server/zipball/815279529ddd63b349dea9a1d0817fa2775d81c8",
+                "reference": "815279529ddd63b349dea9a1d0817fa2775d81c8",
                 "shasum": ""
             },
             "require": {
@@ -94,7 +94,7 @@
                 }
             ],
             "description": "Server side handling class for FIDO U2F registration and authentication",
-            "time": "2016-12-13T22:09:51+00:00"
+            "time": "2016-12-14T11:52:47+00:00"
         }
     ],
     "packages-dev": [],

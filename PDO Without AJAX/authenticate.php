@@ -30,9 +30,12 @@ if(!empty($registrations)){
     // Store the request for later
     $_SESSION['authenticationRequest'] = $authenticationRequest;
 
+    // Store the user attempting to authenticate
+    $_SESSION['authenticatingUser'] = $user;
+
     // now pass the data to the U2F authentication view.
     $templates = new League\Plates\Engine(__DIR__.'/views');
-    echo $templates->render('u2f-authenticate', ['authenticationRequest' => $authenticationRequest]);
+    echo $templates->render('u2f-authentication', ['authenticationRequest' => json_encode($authenticationRequest)]);
 
 }
 
